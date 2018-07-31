@@ -31,7 +31,7 @@ $ build/sbt compile
 $ ./bin/spark-shell
 ```
 
-### Attaching IntelliJ debugger <sup>3, 4</sup>
+### Attaching IntelliJ debugger locally <sup>3, 4</sup>
 
 1. Open IntelliJ. Open the spark project you imported earlier. Open  "Run -> Edit Configurations..." Then click the "+" to add a new run/debug configuration, and select "Remote". Give it a name, e.g. "SparkLocal", and select "Socket" for Transport, "Attach" for Debugger mode, and type in "localhost" for Host and the port you used above for Port, in this case, "5005". Click "OK" to save. 
 2. export SPARK_SUBMIT_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005
