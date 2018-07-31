@@ -20,7 +20,7 @@ All of this information is just paraphrased from other pages, linked below.
 
 ### Building quicker with SBT [2]
 
-`bash
+```bash
 $ build/sbt clean package
 $ ./bin/spark-shell
 $ export SPARK_PREPEND_CLASSES=true
@@ -29,7 +29,7 @@ $ ./bin/spark-shell # Now it's using compiled classes
 $ build/sbt compile
 \# ... you can now see your changes in spark-shell \#
 $ ./bin/spark-shell
-
+```
 
 ### Attaching IntelliJ debugger [3, 4]
 `
