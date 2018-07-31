@@ -32,19 +32,17 @@ $ ./bin/spark-shell
 ```
 
 ### Attaching IntelliJ debugger <sup>3, 4</sup>
-`
 
 1. Open IntelliJ. Open the spark project you imported earlier. Open  "Run -> Edit Configurations..." Then click the "+" to add a new run/debug configuration, and select "Remote". Give it a name, e.g. "SparkLocal", and select "Socket" for Transport, "Attach" for Debugger mode, and type in "localhost" for Host and the port you used above for Port, in this case, "5005". Click "OK" to save. 
 2. export SPARK_SUBMIT_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005
-3. Now when you run spark-shell, it will say "Listening for transport dt_socket at address: 5005"
-4. In IntelliJ, clikc Debug and select your SparkLocal configuration. spark-shell should now continue executing, and you should be able to set breakpoints in the codebase!
+3. run ./bin/spark-shell, it will should "Listening for transport dt_socket at address: 5005"
+4. In IntelliJ, clikc Debug and select your SparkLocal configuration. spark-shell should now continue executing, and you should be able to set breakpoints in the codebase.
 5. If you want to turn off debugging:
     unset SPARK_SUBMIT_OPTS
 
-
 ### References
 
-[1] https://github.com/apache/spark
-[2] https://spark.apache.org/developer-tools.html
-[3] https://stackoverflow.com/questions/30403685/how-can-i-debug-spark-application-locally
-[4] https://community.hortonworks.com/articles/15030/spark-remote-debugging.html
+[1] https://github.com/apache/spark <br>
+[2] https://spark.apache.org/developer-tools.html <br>
+[3] https://stackoverflow.com/questions/30403685/how-can-i-debug-spark-application-locally <br>
+[4] https://community.hortonworks.com/articles/15030/spark-remote-debugging.html <br>
