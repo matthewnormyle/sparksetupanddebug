@@ -25,9 +25,9 @@ $ build/sbt clean package
 $ ./bin/spark-shell
 $ export SPARK_PREPEND_CLASSES=true
 $ ./bin/spark-shell # Now it's using compiled classes
-# ... do some local development ... #
+\# ... do some local development ... \#
 $ build/sbt compile
-# ... you can now see your changes in spark-shell 
+\# ... you can now see your changes in spark-shell \#
 $ ./bin/spark-shell
 
 
