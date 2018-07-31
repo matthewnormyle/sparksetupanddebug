@@ -12,7 +12,7 @@ All of this information is just paraphrased from other pages, linked below.
 3. cd into cloned spark directory
 4. ./build/mvn -DskipTests clean package
 
-### IntelliJ setup
+### IntelliJ setup <sup>2</sup>
 
 1. Download IntelliJ and get the Scala plugin
 2. "Go to File -> Import Project, locate the spark source directory, and select “Maven Project”. In the Import wizard, it’s fine to leave settings at their default. However it is usually useful to enable “Import Maven projects automatically”, since changes to the project structure will automatically update the IntelliJ project."
