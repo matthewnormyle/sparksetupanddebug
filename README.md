@@ -5,7 +5,7 @@ In the case of Apache Spark, I wanted to know how to make codebase changes, buil
 
 All of this information is just paraphrased from other pages, linked below.
 
-### Setup [1]
+### Setup <sup>1</sup>
 
 1. Make sure Java and Maven are installed on your machine
 2. git clone https://github.com/apache/spark.git
@@ -18,7 +18,7 @@ All of this information is just paraphrased from other pages, linked below.
 2. "Go to File -> Import Project, locate the spark source directory, and select “Maven Project”. In the Import wizard, it’s fine to leave settings at their default. However it is usually useful to enable “Import Maven projects automatically”, since changes to the project structure will automatically update the IntelliJ project."
 
 
-### Building quicker with SBT [2]
+### Building quicker with SBT <sup>2</sup>
 
 ```bash
 $ build/sbt clean package
@@ -31,7 +31,7 @@ $ build/sbt compile
 $ ./bin/spark-shell
 ```
 
-### Attaching IntelliJ debugger [3, 4]
+### Attaching IntelliJ debugger <sup>3, 4</sup>
 `
 
 1. Open IntelliJ. Open the spark project you imported earlier. Open  "Run -> Edit Configurations..." Then click the "+" to add a new run/debug configuration, and select "Remote". Give it a name, e.g. "SparkLocal", and select "Socket" for Transport, "Attach" for Debugger mode, and type in "localhost" for Host and the port you used above for Port, in this case, "5005". Click "OK" to save. 
