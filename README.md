@@ -1,4 +1,4 @@
-## Zero to building, running, and debugging Apache Spark source on Ubuntu
+## Zero to building, running, and debugging Apache Spark source on Ubuntu 16.04
 
 My first step to understanding a codebase usually involves learning how to build, run, and attach a debugger.
 In the case of Apache Spark, I wanted to know how to make codebase changes, build and see them in spark-shell, and attach with the IntelliJ debugger. Steps to do so on Ubuntu are below.
