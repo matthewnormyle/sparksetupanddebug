@@ -7,7 +7,11 @@ All of this information is just paraphrased from other pages, linked below.
 
 ### Setup <sup>1</sup>
 
-1. Make sure Java and Maven are installed on your machine
+1. Make sure Java and Maven are installed on your machine. If not, run
+```bash
+sudo apt install openjdk-8-jdk 
+sudo apt install maven
+```
 2. git clone https://github.com/apache/spark.git
 3. cd into cloned spark directory
 4. ./build/mvn -DskipTests clean package
